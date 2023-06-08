@@ -1,0 +1,69 @@
+spring:
+  datasource:
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    url: jdbc:mysql://tangying-f.mysql.rds.aliyuncs.com:3306/cdk
+    username: root
+    password: A123456b
+springdoc:
+  swagger-ui:
+    enabled: true
+
+logging:
+  level:
+    com:
+      tyf:
+        livecdk:
+          service: debug
+          dao:
+            client: info
+
+feign:
+  okhttp:
+    enabled: true
+  client:
+    config:
+      bilibili-proxy:
+        connectTimeout: 500
+        readTimeout: 500
+      local-test:
+        connectTimeout: 500
+        readTimeout: 1000
+
+xiaoxiong:
+  url: https://api.xiaoxiangdaili.com/ip/get
+  appKey: 969077877352321024
+  appSecret: zEknSdNo
+  cnt: 5
+
+ttorc:
+  appkey: fa397e17cf542ddba7d251ca7fda25ea
+  itemid: 33
+  waitMilli: 1000
+
+
+bilibili:
+  jsonPath: D:\cdk\p-all.json
+  danmu:
+    delay-time: 500
+    round-delay-time: 4000
+  rewardMap:
+    1: "72c7409d"
+    2: "a5a44fe1"
+    3: "cad83ff6"
+    4: "f092c355"
+    5: "29933063"
+    6: "4c4240b2"
+    7: "470022a7"
+    8: "a9c5a59e"
+    9: "f3a11d04"
+    11: "23268e79"
+    12: "401a8931"
+    13: "9712397d"
+    14: "e9a33442"
+    15: "17009751"
+    16: "c96e7d04"
+
+
+
+
+
